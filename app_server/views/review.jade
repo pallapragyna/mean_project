@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  #banner.page-header
+    .row
+      .col-md-6.col-sm-12
+      
+  .row
+    .col-md-6.col-sm-12
+      h1(style="font-size:29px;font-weight:bold;text-decoration:underline;") Review
+    
+      form(action="/submit_review", method="POST")
+      label(for="name",style="font-size:19px;padding-right:20px;margin-bottom:30px;") Name  
+      input(type="text", id="name", name="name", required,,style="margin-bottom:20px;")
+      br
+      label(for="email",style="font-size:19px;padding-right:20px;margin-bottom:30px;") Email 
+      input(type="email", id="email", name="email", required,style="margin-bottom:20px;")
+      br
+      label(for="rating",style="font-size:19px;padding-right:20px;text-align:center;margin-bottom:30px;") Rating  
+      input(type="number", id="rating", name="rating", min=1, max=5, required,style="width:160px;height:10px;font-size:16px;padding:5px;margin-bottom:20px;")
+      br
+      label(for="review",style="font-size:19px;padding-right:20px;") Review 
+      textarea(id="review", name="review", rows=2, cols=30, required,,style="margin-bottom:8px;")
+      br
+      br
+      input(type="submit", value="Submit",style="width:15%;font-size:14px;margin-bottom:0px;")

@@ -10,7 +10,7 @@ var usersRouter = require('./app_server/routes/users');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname,"app_server", 'views'));
+app.set('views', path.join(__dirname,'app_server', 'views'));
 app.set('view engine', 'jade');
 
 app.use(logger('dev'));
@@ -35,7 +35,12 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error', {
+    title: 'Error',        // Explicitly pass the title here
+    message: err.message,  // Pass the error message
+    error: err             // Pass the full error object
+  });
 });
+
 
 module.exports = app;

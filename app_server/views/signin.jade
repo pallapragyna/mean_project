@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .container(style="margin-top:20px;font-family:Arial;")
+    h1(style="font-size:39px;font-weight:bold;text-decoration:underline;") Login
+    
+    p.lead(style="font-size:21px;font-weight:bold;")
+      | Sign in with your account.
+      | Don't have one?
+      a(href='/register') Register Now.
+    
+    // Login Form
+    form(method='post', action='/login') 
+      .form-group(style="display:inline-block;max-width:200;width:100%;margin-bottom:30px;")
+        label(for='username ',style="font-size:19px;padding-right:20px;") Username
+        input.form-control(type='text', id='username', name='username', placeholder='Enter a username', required)
+        
+      .form-group(style="display:inline-block;max-width:200;width:100%;margin-bottom:30px;")
+        label(for='password',style="font-size:19px;padding-right:20px;") Password
+        input.form-control(type='password', id='password', name='password', placeholder='Enter a password', required)
+        <br>
+      // Submit Button
+      button.btn.btn-primary(type='submit',style="width:15%;font-size:14px;margin-bottom:0px;") Submit 
+      &nbsp; 
+      <br> 
+      <br>
+      a.btn.btn-default(role='button', href='/',style="width:50%;font-size:24px;padding:10px;") Cancel
