@@ -5,12 +5,12 @@ module.exports.homelist = function(req, res) {
         title: 'List Of Restaurants',
         
     },
-      sidebar: "Looking for good ambiance and quality food? Zoggy helps you find the best places to eat near you. We have a list of the best restaurants, cafes, and bars in your area. We also have a list of the best places to hang out with friends and family. Zoggy is your go-to app for finding the best places to eat and have a good time.",
+      sidebar: "Looking for good ambiance and quality food? Zoggy helps you find the best places to eat near you. We have a list of the best restaurants, cafes, and bars in your area. We also have a list of the best places to hang out with friends and family. Zoggy is your go-to app for finding the best places to eat and have a good time",
       locations: [{
           name: 'Tulips',
           address: 'Ghatkeshar ,Hyderabad',
           rating: 3,
-          facilities: ['family dinning', 'Unlimited_Food', 'Good_Ambiance'],
+          facilities: ['family dinning, Unlimited_Food, Good_Ambiance'],
           distance: '1km'
       }, {
           name: 'Absolute Barbecues',

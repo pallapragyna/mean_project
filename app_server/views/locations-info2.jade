@@ -3,7 +3,7 @@ extends layout
 block content
   .row.page-header
     .col-lg-12
-      h1 Absolute Barbeque
+      h1(style="margin-top:100px;font-size:40px;text-decoration:underline;")  Absolute Barbeque
   .row
     .col-xs-12.col-md-9
       .row
@@ -14,16 +14,16 @@ block content
             span.glyphicon.glyphicon-star
             span.glyphicon.glyphicon-star-empty
             span.glyphicon.glyphicon-star-empty
-          p Medipally , Hyderabad
+          p(style="font-size:20px")  Medipally , Hyderabad
           .panel.panel-primary
             .panel-heading
-              h2.panel-title Opening hours
+              h2.panel-title(style="font-size:35px;text-decoration:underline;")  Opening hours
             .panel-body
-              p Monday - sunday : 10:00am - 10:00pm
+              p(style="font-size:20px")  Monday - sunday : 10:00am - 10:00pm
               
           .panel.panel-primary
             .panel-heading
-              h2.panel-title Facilities
+              h2.panel-title(style="font-size:35px;text-decoration:underline;")  Facilities
             .panel-body
               span.label.label-warning
                 span.glyphicon.glyphicon-ok
@@ -47,8 +47,8 @@ block content
         .col-xs-12
           .panel.panel-primary.review-panel
             .panel-heading
-              a.btn.btn-default.pull-right(href='/location/review/new')     Add review
-              h2.panel-title Customer reviews
+              a.btn.btn-default.pull-right(href='/review/',style="font-size:25px;color:red;")     Add review
+              h2.panel-title(style="text-decoration:underline;font-size:30px;") Customer reviews
             .panel-body.review-container
               .row
                 .review
@@ -59,10 +59,10 @@ block content
                       span.glyphicon.glyphicon-star
                       span.glyphicon.glyphicon-star
                       span.glyphicon.glyphicon-star
-                    span.reviewAuthor Simon Holmes
-                    small.reviewTimestamp 16 July 2013
+                    span.reviewAuthor(style="font-weight:bold;font-size:20px") Simon Holmes
+                    small.reviewTimestamp(style="text-decoration:underline;font-size:15px;")  16 July 2013
                   .col-xs-12
-                    p What a great place
+                    p(style="font-family:serif;font-size:20px;") What a great place
               .row
                 .review
                   .well.well-sm.review-header
@@ -72,12 +72,12 @@ block content
                       span.glyphicon.glyphicon-star
                       span.glyphicon.glyphicon-star-empty
                       span.glyphicon.glyphicon-star-empty
-                    span.reviewAuthor Charlie Chaplin
-                    small.reviewTimestamp 16 June 2013
+                    span.reviewAuthor(style="font-weight:bold;font-size:20px") Charlie Chaplin
+                    small.reviewTimestamp(style="text-decoration:underline;font-size:15px;") 16 June 2013
                   .col-xs-12
-                    p It was okay
+                    p(style="font-family:serif;font-size:20px;") It was okay <hr>
     .col-xs-12.col-md-3
       p.lead
-        | Absolute barbeque is cool for friends.
+        | Absolute barbeque is cool for friends.<hr>
       p
         | If you've been and you like it - or if you don't - please leave a review to help other people just like you.

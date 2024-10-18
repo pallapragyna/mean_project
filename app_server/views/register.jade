@@ -1,26 +1,22 @@
 extends layout
 
 block content
-  #banner.page-header
-    .row
-      .col-md-6.col-sm-12
-      
-  .row
-    .col-md-6.col-sm-12
-      h1(style="font-size:29px;font-weight:bold;text-decoration:underline;") Review
-    
-      form(action="/submit_review", method="POST")
-      label(for="name",style="font-size:19px;padding-right:20px;margin-bottom:30px;") Name  
-      input(type="text", id="name", name="name", required,,style="margin-bottom:20px;")
-      br
-      label(for="email",style="font-size:19px;padding-right:20px;margin-bottom:30px;") Email 
-      input(type="email", id="email", name="email", required,style="margin-bottom:20px;")
-      br
-      label(for="rating",style="font-size:19px;padding-right:20px;text-align:center;margin-bottom:30px;") Rating  
-      input(type="number", id="rating", name="rating", min=1, max=5, required,style="width:160px;height:10px;font-size:16px;padding:5px;margin-bottom:20px;")
-      br
-      label(for="review",style="font-size:19px;padding-right:20px;") Review 
-      textarea(id="review", name="review", rows=2, cols=30, required,,style="margin-bottom:8px;")
-      br
-      br
-      input(type="submit", value="Submit",style="width:15%;font-size:14px;margin-bottom:0px;")
+  h1(style="font-size:29px")
+    .container(style="margin-top:5px;font-family:Arial;")
+      h1(style="font-size:39px;font-weight:bold;text-decoration:underline;") Register now
+      p.lead(style="font-size:21px;font-weight:bold;")
+        | Create your account. Do you have one?
+        a(href='/signin') Sign in Now.
+      .form-group(style="display:inline-block;max-width:200;width:100%;margin-bottom:20px;")
+        label(for='username',style="font-size:19px;font-weight:normal;padding-right:20px; ") Username
+        input.form-control(type='text', id='username', name='username', placeholder='Enter a username')
+      .form-group(style="display:inline-block;max-width:200;width:100%;margin-bottom:20px;")
+        label(for='password',style="font-size:19px;font-weight:normal;padding-right:20px;") Password
+        input.form-control(type='password', id='password', name='password', placeholder='Enter a password')
+      .form-group(style="display:inline-block;max-width:200;width:100%;margin-bottom:20px;")
+        label(for='confirm-password',style="font-size:19px;font-weight:normal;padding-right:20px;") Confirm Password
+        input.form-control(type='password', id='confirm-password', name='confirm-password', placeholder='Enter your password again')
+      button.btn.btn-primary(type='submit',style="width:15%;font-size:14px;margin-bottom:20px;") Submit
+      &nbsp;
+      <br>
+      a.btn.btn-default(role='button', href='/',style="width:50%;font-size:24px;padding:10px;") Cancel

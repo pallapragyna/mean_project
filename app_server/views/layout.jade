@@ -11,8 +11,8 @@ html
   body
     .container
       // Move Zoggy title and tagline to the top
-      h1 ZOGGY
-      p THINDHAM TIRGUDHAM :-)
+      h1(style="font-size:60px;") ZOGGY
+      p(style="font-size:40px;") THINDHAM TIRGUDHAM :-)
 
     // Navbar comes below the title and tagline
     .navbar.navbar-default.navbar-fixed-top
@@ -27,13 +27,13 @@ html
           ul.nav.navbar-nav
           
             li 
-              a(href='/about/') <b> About </b>
+              a(href='/') <b> About </b>
             li 
               a(href='/signin') <b> SignIn </b>
             li 
               a(href='/review') <b> Add Review </b>
             li
-              a(href='/') <b> Restaurants </b> 
+              a(href='/restaurants') <b> Restaurants </b> 
     .container
       block content
       footer
